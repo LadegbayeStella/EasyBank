@@ -1,9 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 400ms ease-in;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 :root {
     --Dark-Blue: hsl(233, 26%, 24%);
     --ime-Green: hsl(136, 65%, 51%);
     --Bright-Cyan: hsl(192, 70%, 51%);
-    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Grayish-Blue: hsl(225, 4%, 81%);
     --Light-Grayish-Blue: hsl(220, 16%, 96%);
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background: var(--Light-Grayish-Blue);
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    background: var(--White);
+}
+
+
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--Dark-Blue);
+    margin-left: 2rem;
+}
+
+.navbar a:hover {
+    color: var(--ime-Green);
+    cursor: pointer;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.btn {
+    background: linear-gradient(55deg, rgb(145, 251, 145), rgb(128, 128, 249));
+    width: 13rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color: var(--White);
+}
+
+.home {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.content {
+    flex: 1 1 40rem;
+}
+
+.content h1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: var(--Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+.content p {
+    color: var(--Dark-Blue);
+    margin-bottom: 1.5rem;
+    line-height: 24px;
+    font-size:1.7rem ;
+}
+
+.image {
+    flex: 1 1 40rem;
+}
+
+.image img {
+    width: 30vw;
+}
+
+.about{
+    background-color: var(--Grayish-Blue);
+
+}
+.aboutUs h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--Dark-Blue);
+}
+
+.aboutUs p{
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: var(--Dark-Blue);
 }
