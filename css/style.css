@@ -226,9 +226,9 @@ footer .credit {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
-footer .credit span{
+footer .credit span {
     color: var(--ime-Green);
-font-style: italic;
+    font-style: italic;
 }
 
 /* ====== Media queries ======= */
@@ -264,6 +264,30 @@ font-style: italic;
         text-align: center;
     }
 
+    .home .image img {
+        width: 35rem;
+    }
+
+    .box-container .box .image img{
+        width: 20rem;
+    }
+
+    .box-container .box{
+        margin: 2rem;
+        margin-left: 9.1rem;
+    }
+
+    .box-container .box h3{
+       font-size: 3.4rem;
+       font-weight: bolder;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .box-container .box p{
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
     .fa-times {
         transform: rotate(180deg);
     }
@@ -280,6 +304,17 @@ font-style: italic;
         margin: 1.5rem;
         padding: 1rem 2rem;
         font-size: 2.5rem;
+    }
+
+    .container .box .img img{
+        width: 35rem;
+        box-shadow: 2px 2px 3px black;
+    }
+
+    
+    .container .box{
+        margin: 1rem;
+        margin-left: 2rem;
     }
 }
 
