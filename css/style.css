@@ -66,6 +66,12 @@ section {
 
 #menu-btn {
     display: none;
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--ime-Green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
 }
 
 .btn {
@@ -183,19 +189,15 @@ section {
 footer {
     background-color: var(--Dark-Blue);
     height: 12rem;
+    z-index: 999;
 }
 
 .icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
-/* footer a span{
-    color: ghostwhite;
-    padding-right: 3rem;
-    font-weight: bolder;
-    font-size: 3rem;
-} */
 
 .icon .icons {
     margin-bottom: -10rem;
@@ -208,11 +210,69 @@ footer {
     font-size: 1.2rem;
 }
 
-.icon .links h1{
+.icon .links h1 {
     margin: 3rem;
 }
 
-.icons .btn p{
+.icons .btn p {
     font-weight: bolder;
     font-size: 2rem;
+}
+
+/* ====== Media queries ======= */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--Dark-Blue);
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar.active {
+        transform: scaleY(1);
+    }
+
+    .header .navbar a {
+        display: block;
+        background: var(--White);
+        border-radius: .5rem;
+        color:var(--ime-Green) ;
+        margin: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
 }
