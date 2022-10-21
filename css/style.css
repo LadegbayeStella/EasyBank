@@ -188,15 +188,13 @@ section {
 
 footer {
     background-color: var(--Dark-Blue);
-    height: 12rem;
-    z-index: 999;
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    /* justify-content: space-between;
+    position: relative; */
 }
 
 .icon .icons {
@@ -217,6 +215,20 @@ footer {
 .icons .btn p {
     font-weight: bolder;
     font-size: 2rem;
+}
+
+footer .credit {
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: ghostwhite;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+footer .credit span{
+    color: var(--ime-Green);
+font-style: italic;
 }
 
 /* ====== Media queries ======= */
@@ -264,7 +276,7 @@ footer {
         display: block;
         background: var(--White);
         border-radius: .5rem;
-        color:var(--ime-Green) ;
+        color: var(--ime-Green);
         margin: 1.5rem;
         padding: 1rem 2rem;
         font-size: 2.5rem;
