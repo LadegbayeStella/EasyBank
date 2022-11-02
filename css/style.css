@@ -30,6 +30,7 @@ html {
 
 body {
     background: var(--Light-Grayish-Blue);
+    scrollbar-width: 30rem;
 }
 
 section {
@@ -190,15 +191,24 @@ footer {
     background-color: var(--Dark-Blue);
 }
 
+
+footer a {
+    fill: ghostwhite;
+}
+
 .icon {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    /* justify-content: space-between;
-    position: relative; */
+    justify-content: space-around; */
+    z-index: 1;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .icon .icons {
-    margin-bottom: -10rem;
+    margin-bottom: -20rem;
 }
 
 .icon .links {
@@ -212,9 +222,10 @@ footer {
     margin: 3rem;
 }
 
-.icons .btn p {
+.icons .btn1 p {
     font-weight: bolder;
     font-size: 2rem;
+    color: #eee;
 }
 
 footer .credit {
@@ -233,7 +244,7 @@ footer .credit span {
 
 /* ====== Media queries ======= */
 
-@media (max-width:991px) {
+ @media (max-width:991px) {
     html {
         font-size: 55%;
     }
@@ -265,25 +276,25 @@ footer .credit span {
     }
 
     .home .image img {
-        width: 35rem;
+        width: 30rem;
     }
 
-    .box-container .box .image img{
+    .box-container .box .image img {
         width: 20rem;
-    }
+    } 
 
-    .box-container .box{
+    .box-container .box {
         margin: 2rem;
         margin-left: 9.1rem;
     }
 
-    .box-container .box h3{
-       font-size: 3.4rem;
-       font-weight: bolder;
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .box-container .box h3 {
+        font-size: 3.4rem;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .box-container .box p{
+    .box-container .box p {
         font-size: 2rem;
         font-weight: lighter;
     }
@@ -306,20 +317,49 @@ footer .credit span {
         font-size: 2.5rem;
     }
 
-    .container .box .img img{
-        width: 35rem;
+    .container .box .img img {
+        width: 34rem;
         box-shadow: 2px 2px 3px black;
     }
 
-    
-    .container .box{
+
+    .container .box {
         margin: 1rem;
         margin-left: 2rem;
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:320px) {
     html {
         font-size: 50%;
     }
-}
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn1 {
+      align-self: center;
+        justify-items: center;
+        text-align: center;
+        margin-left: 12rem;
+        display:grid;
+    }
+
+    .icons{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        color: ghostwhite;
+    }
+} 
