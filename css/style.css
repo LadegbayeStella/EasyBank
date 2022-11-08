@@ -194,6 +194,7 @@ footer {
 
 footer a {
     fill: ghostwhite;
+    font-size: 4rem;
 }
 
 .icon {
@@ -215,7 +216,7 @@ footer a {
     color: var(--White);
     margin: 1rem 0;
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .icon .links h1 {
